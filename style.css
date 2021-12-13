@@ -10,22 +10,22 @@ html {
 }
 :root {
   --main-color: #3bc9db;
-  --second-color: #0ca678;
+  --second-color: #954feb;
+  /* #0ca678 */
   --third-color: #adb5bd;
   --text-color: #868e96;
   --text-shadow: 0 0 0.1rem #868e96;
   --text-shadow-h: 0 0 0.5rem #0c8599;
 }
 body {
-  /* border: 10px solid black; */
   font-family: "Inter", sans-serif;
-  /* width: 1200px;
-  margin: 0 auto; */
   background-color: #212529;
 }
 
 header {
   margin: 1rem 14.4rem;
+  /* position: sticky;
+  top: 1rem; */
 }
 main {
   margin: 0 14.4rem;
@@ -36,7 +36,7 @@ footer {
 nav {
   display: flex;
   max-width: 100%;
-  justify-content: flex-end;
+  /* justify-content: space-between; */
   cursor: pointer;
 }
 section {
@@ -80,6 +80,7 @@ nav a:visited {
   text-shadow: var(--text-shadow-h);
   flex-grow: 1;
   padding: 2rem 0;
+  transition: all 0.5s;
 }
 nav a:hover,
 nav a:active {
@@ -94,8 +95,7 @@ nav a:active {
 }
 .hero-text {
   font-size: 1.6rem;
-  color: var(--text-color);
-  text-shadow: var(--text-shadow);
+
   margin: 12.8rem 0;
   align-self: flex-start;
   text-align: left;
@@ -104,16 +104,22 @@ nav a:active {
   color: var(--main-color);
   text-shadow: 0 0 0.2rem var(--main-color);
 }
+.ht2 {
+  color: #fff;
+  text-shadow: 0 0 0.1rem #fff;
+}
 .ht2,
 .ht3 {
   font-size: 3.2rem;
   font-weight: 700;
+}
+.ht3 {
   color: var(--third-color);
   text-shadow: var(--text-shadow);
 }
-.ht2 {
-  color: #fff;
-  text-shadow: 0 0 0.1rem #fff;
+.ht4 {
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
 }
 
 .skills {
@@ -291,7 +297,7 @@ nav a:active {
   height: 4rem;
   fill: transparent;
   stroke: var(--second-color);
-  /* filter: drop-shadow(0 0 1px var(--second-color)); */
+  filter: drop-shadow(0 0 1px var(--second-color));
 }
 /* CONTACT */
 #contact {
@@ -321,6 +327,7 @@ nav a:active {
   border-radius: 0.9rem;
   padding: 1.6rem 4.8rem;
   margin: 0 auto;
+  transition: all 0.3s;
 }
 #contact a:hover,
 #contact a:active {
@@ -335,10 +342,11 @@ footer a {
   font-size: 1.2rem;
   color: var(--text-color);
   margin-bottom: 3rem;
+  transition: all 0.3s;
 }
 footer a:hover {
   transform: scale(1.05);
-  color: var(--third-color);
+  color: var(--main-color);
 }
 .top {
   position: fixed;
@@ -350,6 +358,7 @@ footer a:hover {
   box-shadow: 0 0 0.5rem #0c8599;
   stroke: var(--second-color);
   border-radius: 50%;
+  transition: all 0.2s;
 }
 .top:hover {
   transform: scale(1.2);
@@ -375,6 +384,7 @@ footer a:hover {
   width: 3rem;
   height: 3rem;
   fill: var(--third-color);
+  transition: all 0.5s;
 }
 .logos:hover {
   transform: scale(1.5);
