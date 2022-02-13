@@ -16,36 +16,55 @@
   </head>
   <body>
     <header>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="menu"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
       <nav>
-        <svg
-          id="logo"
-          data-name="Warstwa 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 101 101"
-        >
-          <rect x="0.5" y="0.5" width="100" height="100" />
-          <rect x="10.85" y="10.5" width="80" height="80" />
-          <rect x="20.85" y="20.5" width="60" height="60" />
-          <rect x="30.85" y="30.5" width="40" height="40" />
-          <rect x="40.5" y="40.5" width="20" height="20" />
-        </svg>
-        <a href="#hero">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#contact">Contact</a>
+        <div class="nav">
+          <!-- <svg
+            id="logo"
+            data-name="Warstwa 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 101 101"
+          >
+            <rect x="0.5" y="0.5" width="100" height="100" />
+            <rect x="10.85" y="10.5" width="80" height="80" />
+            <rect x="20.85" y="20.5" width="60" height="60" />
+            <rect x="30.85" y="30.5" width="40" height="40" />
+            <rect x="40.5" y="40.5" width="20" height="20" />
+          </svg> -->
+          <img id="logo" src="img/profile.png" alt="" />
+          <p class="nav__link">About</p>
+          <p class="nav__link">Projects</p>
+          <p class="nav__link">Roadmap</p>
+          <p class="nav__link">Contact</p>
+        </div>
       </nav>
     </header>
     <main>
-      <section id="hero">
-        <div class="hero-text">
-          <p class="ht1">Hi, my name is</p>
-          <p class="ht2">Chris.</p>
-          <p class="ht3">Welcome to my first website.</p>
-          <p class="ht4">I'm a Hero here so let my say something about me.</p>
+      <section id="About">
+        <div class="hero__text">
+          <p class="hero__text-1">Hi, my name is</p>
+          <p class="hero__text-2">Chris.</p>
+          <p class="hero__text-3">Welcome to my first website.</p>
+          <p class="hero__text-4">
+            I'm a Hero here so let my say something about me.
+          </p>
         </div>
         <div class="skills">
           <h3>Skills</h3>
-          <p class="skill-name">HTML</p>
+          <p class="skill__name">HTML</p>
           <svg
             id="html"
             data-name="html"
@@ -59,7 +78,7 @@
             <circle class="cls-2" cx="305" cy="305" r="100" />
             <circle class="cls-1" cx="305" cy="305" r="50" />
           </svg>
-          <p class="skill-name">CSS</p>
+          <p class="skill__name">CSS</p>
           <svg
             id="css"
             data-name="css"
@@ -73,7 +92,7 @@
             <circle class="cls-2" cx="305" cy="305" r="100" />
             <circle class="cls-1" cx="305" cy="305" r="50" />
           </svg>
-          <p class="skill-name">JavaScript (ES6)</p>
+          <p class="skill__name">JavaScript (ES6)</p>
           <svg
             id="javascript"
             data-name="javascript"
@@ -87,7 +106,7 @@
             <circle class="cls-2" cx="305" cy="305" r="100" />
             <circle class="cls-1" cx="305" cy="305" r="50" />
           </svg>
-          <p class="skill-name">TypeScript</p>
+          <p class="skill__name">TypeScript</p>
           <svg
             id="typescript"
             data-name="typescript"
@@ -101,7 +120,7 @@
             <circle class="cls-2" cx="305" cy="305" r="100" />
             <circle class="cls-1" cx="305" cy="305" r="50" />
           </svg>
-          <p class="skill-name">Angular</p>
+          <p class="skill__name">Angular</p>
           <svg
             id="angular"
             data-name="angular"
@@ -115,7 +134,7 @@
             <circle class="cls-2" cx="305" cy="305" r="100" />
             <circle class="cls-1" cx="305" cy="305" r="50" />
           </svg>
-          <p class="skill-name">Git</p>
+          <p class="skill__name">Git</p>
           <svg
             id="git"
             data-name="git"
@@ -129,7 +148,7 @@
             <circle class="cls-2" cx="305" cy="305" r="100" />
             <circle class="cls-1" cx="305" cy="305" r="50" />
           </svg>
-          <p class="skill-name">English</p>
+          <p class="skill__name">English</p>
           <svg
             id="english"
             data-name="english"
@@ -149,21 +168,21 @@
         </div>
       </section>
 
-      <section id="projects">
-        <h2 class="projects-title">Projects</h2>
-        <div class="projects_list">
+      <section id="Projects">
+        <h2 class="projects__title">Projects</h2>
+        <div class="projects__list">
           <div class="project">
-            <img class="project_min-img" src="img/img1.png" alt="" />
+            <img class="project__min-img" src="img/img1.png" alt="" />
 
-            <div class="project_descr">
-              <div class="project_title">
+            <div class="project__descr">
+              <div class="project__descr--title">
                 <p>antyKYC</p>
               </div>
-              <div class="project_links">
-                <a class="project_link" href="#"
+              <div class="flex-24gap">
+                <a class="" href="#"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="project_link-eye"
+                    class="project__descr--links"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -182,10 +201,10 @@
                     />
                   </svg>
                 </a>
-                <a class="project_link" href="#">
+                <a class="" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="project_link-github"
+                    class="project__descr--links github_fill"
                     viewBox="0 0 512 512"
                   >
                     <path
@@ -197,15 +216,17 @@
             </div>
           </div>
           <div class="project">
-            <img class="project_min-img" src="img/img1.png" alt="" />
+            <img class="project__min-img" src="img/img1.png" alt="" />
 
-            <div class="project_descr">
-              <p class="project_title">antyKYC</p>
-              <div class="project_links">
-                <a class="project_link" href="#"
+            <div class="project__descr">
+              <div class="project__descr--title">
+                <p>antyKYC</p>
+              </div>
+              <div class="flex-24gap">
+                <a class="" href="#"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="project_link-eye"
+                    class="project__descr--links"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -224,10 +245,10 @@
                     />
                   </svg>
                 </a>
-                <a class="project_link" href="#">
+                <a class="" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="project_link-github"
+                    class="project__descr--links github_fill"
                     viewBox="0 0 512 512"
                   >
                     <path
@@ -239,15 +260,17 @@
             </div>
           </div>
           <div class="project">
-            <img class="project_min-img" src="img/img1.png" alt="" />
+            <img class="project__min-img" src="img/img1.png" alt="" />
 
-            <div class="project_descr">
-              <p class="project_title">antyKYC</p>
-              <div class="project_links">
-                <a class="project_link" href="#"
+            <div class="project__descr">
+              <div class="project__descr--title">
+                <p>antyKYC</p>
+              </div>
+              <div class="flex-24gap">
+                <a class="" href="#"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="project_link-eye"
+                    class="project__descr--links"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -266,10 +289,10 @@
                     />
                   </svg>
                 </a>
-                <a class="project_link" href="#">
+                <a class="" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="project_link-github"
+                    class="project__descr--links github_fill"
                     viewBox="0 0 512 512"
                   >
                     <path
@@ -282,14 +305,14 @@
           </div>
         </div>
       </section>
-      <section id="roadmap">
-        <h2 class="roadmap-title">learning roadmap</h2>
-        <div class="roadmap-grid">
-          <div class="roadmap_main-line">
-            <p class="roadmap_date">Q4 2021</p>
+      <section id="Roadmap">
+        <h2 class="roadmap__title">learning roadmap</h2>
+        <div class="roadmap__grid">
+          <div class="roadmap__main-line">
+            <p class="roadmap__date">Q4 2021</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="roadmap_chevron fold2021"
+              class="roadmap__chevron fold2021"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -303,7 +326,7 @@
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="roadmap_chevron unfold2021"
+              class="roadmap__chevron unfold2021"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -317,30 +340,30 @@
             </svg>
           </div>
 
-          <p class="roadmap_line-vertical finished_line roadmap_main-line">
+          <p class="roadmap__line-vertical finished__line roadmap__main-line">
             &nbsp;
           </p>
-          <span class="roadmap_text finished roadmap_main-line hide_q4-2021"
+          <span class="roadmap__text finished roadmap__main-line hide_q4-2021"
             >Begin HTML & CSS beginner course</span
           >
           <p
-            class="roadmap_line-vertical finished_line roadmap_main-line hide_q4-2021"
+            class="roadmap__line-vertical finished__line roadmap__main-line hide_q4-2021"
           >
             &nbsp;
           </p>
-          <span class="roadmap_text finished roadmap_main-line hide_q4-2021"
+          <span class="roadmap__text finished roadmap__main-line hide_q4-2021"
             >Create portfolio website v1</span
           >
           <p
-            class="roadmap_line-vertical finished_line roadmap_main-line hide_q4-2021"
+            class="roadmap__line-vertical finished__line roadmap__main-line hide_q4-2021"
           >
             &nbsp;
           </p>
-          <div class="roadmap_main-line">
-            <p class="roadmap_date roadmap_main-line">Q1 2022</p>
+          <div class="roadmap__main-line">
+            <p class="roadmap__date roadmap__main-line">Q1 2022</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="roadmap_chevron fold_q1-2022"
+              class="roadmap__chevron fold_q1-2022"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -354,7 +377,7 @@
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="roadmap_chevron unfold_q1-2022"
+              class="roadmap__chevron unfold_q1-2022"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -368,65 +391,65 @@
             </svg>
           </div>
 
-          <p class="roadmap_line-vertical finished_line roadmap_main-line">
+          <p class="roadmap__line-vertical finished__line roadmap__main-line">
             &nbsp;
           </p>
-          <span class="roadmap_text finished roadmap_main-line hide_q1-2022"
+          <span class="roadmap__text finished roadmap__main-line hide_q1-2022"
             >Finish course and start new project</span
           >
           <p
-            class="roadmap_line-vertical finished_line roadmap_main-line hide_q1-2022"
+            class="roadmap__line-vertical finished__line roadmap__main-line hide_q1-2022"
           >
             &nbsp;
           </p>
           <span
-            class="roadmap_text roadmap_in-progress roadmap_main-line hide_q1-2022"
+            class="roadmap__text roadmap__in-progress roadmap__main-line hide_q1-2022"
           >
             Begin HTML & CSS advanced course
           </span>
-          <p class="roadmap_line-vertical roadmap_main-line hide_q1-2022">
+          <p class="roadmap__line-vertical roadmap__main-line hide_q1-2022">
             &nbsp;
           </p>
-          <span class="roadmap_text roadmap_main-line hide_q1-2022"
+          <span class="roadmap__text roadmap__main-line hide_q1-2022"
             >Begin Javascript advanced course</span
           >
-          <p class="roadmap_line-vertical roadmap_main-line hide_q1-2022">
+          <p class="roadmap__line-vertical roadmap__main-line hide_q1-2022">
             &nbsp;
           </p>
-          <span class="roadmap_text roadmap_main-line hide_q1-2022"
+          <span class="roadmap__text roadmap__main-line hide_q1-2022"
             >Learn basics of GIT and Jira</span
           >
-          <p class="roadmap_line-vertical roadmap_main-line hide_q1-2022">
+          <p class="roadmap__line-vertical roadmap__main-line hide_q1-2022">
             &nbsp;
           </p>
-          <span class="roadmap_text roadmap_main-line hide_q1-2022"
+          <span class="roadmap__text roadmap__main-line hide_q1-2022"
             >Begin English language course</span
           >
-          <p class="roadmap_line-vertical roadmap_main-line hide_q1-2022">
+          <p class="roadmap__line-vertical roadmap__main-line hide_q1-2022">
             &nbsp;
           </p>
-          <span class="roadmap_text roadmap_main-line hide_q1-2022"
+          <span class="roadmap__text roadmap__main-line hide_q1-2022"
             >Create portfolio website v2</span
           >
-          <p class="roadmap_line-vertical roadmap_main-line hide_q1-2022">
+          <p class="roadmap__line-vertical roadmap__main-line hide_q1-2022">
             &nbsp;
           </p>
-          <span class="roadmap_text roadmap_main-line hide_q1-2022"
+          <span class="roadmap__text roadmap__main-line hide_q1-2022"
             >Create course project & finish course</span
           >
 
-          <p class="roadmap_line-vertical roadmap_main-line hide_q1-2022">
+          <p class="roadmap__line-vertical roadmap__main-line hide_q1-2022">
             &nbsp;
           </p>
-          <span class="roadmap_text roadmap_main-line hide_q1-2022">
+          <span class="roadmap__text roadmap__main-line hide_q1-2022">
             Create at least 5 projects</span
           >
-          <p class="roadmap_line-vertical roadmap_main-line hide_q1-2022">
+          <p class="roadmap__line-vertical roadmap__main-line hide_q1-2022">
             &nbsp;
           </p>
         </div>
       </section>
-      <section id="contact">
+      <section id="Contact" class="contact2">
         <h2 class="contact-title">Contact</h2>
         <p>
           I am open to new opportunities, so if you want to contact me, click on
@@ -438,10 +461,6 @@
         <a href="https://github.com/LazySlasherTrain/p_v1" target="_blank"
           >Designed & Built by LazySlasherTrain</a
         >
-        <!-- <p>Each circle in Circles of Knowledge represent level of skills. I
-          decided to use 6 circle, so circle 1 is beginner level and circle
-          6 means that I have mastered a specific skill. The exception is
-          English which is based on CEFR standard (A1, A2, B1, B2, C1, C2).</p> -->
       </footer>
       <a href="#" class="top-link"
         ><svg
